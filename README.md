@@ -53,7 +53,13 @@ $ pip install -r requirements.txt
 
 ---
 
-## Step-by-Step Pipeline
+## Guideline for running this script
+
+To use this pipeline, users should first place their raw audio files (e.g., .wav recordings of Chopin) in the raw_data/composer_user_specified/ directory. Then, run 1_audio_preprocessing.py to clean and normalize the audio. Once preprocessing is complete, execute 2_Tokenization.py to convert the audio into Encodec tokens, which will be saved in encoded_tokens/composer_user_specified with the folder structure mirrors what user chose for the raw data. Next, run 3_data_preparation.py to generate a metadata JSONL file associating each token. With this setup, launch 4_Transformer.py to train the GPT-style transformer on the prepared data; model checkpoints will be saved to model_results_ComposerUserSpecified/. After training, use 5_MusicPrediction.py to generate new music clips using a 1-token prompt and optionally a 3-second audio seed — the generated WAVs will be written to generated_clips/. If desired, training can be resumed later by running 100_resume_training.py with the appropriate checkpoint path. Throughout the process, users may adjust folder names or composer labels in the script arguments to fit their dataset or use case.
+
+---
+
+## Scripts introduction
 
 ### 1. Audio Preprocessing (`1_audio_preprocessing.py`)
 
