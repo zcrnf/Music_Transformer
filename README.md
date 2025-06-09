@@ -36,7 +36,7 @@ Transformer_ECS111/
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```bash
 # Clone the repo
@@ -53,7 +53,7 @@ $ pip install -r requirements.txt
 
 ---
 
-## 🧠 Step-by-Step Pipeline
+## Step-by-Step Pipeline
 
 ### 1. Audio Preprocessing (`1_audio_preprocessing.py`)
 
