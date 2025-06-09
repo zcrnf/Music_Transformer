@@ -129,4 +129,4 @@ data can be downloaded by open source website for music, for example the Interne
 
 Internet Archive. (n.d.). Audio Archive. https://archive.org/details/audio 
 
-For bugs or questions, please open an issue on GitHub or email the project maintainer.
+For bugs or questions, please open an issue on GitHub or email the project maintainer: myuzheng@ucdavis.edu
