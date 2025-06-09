@@ -13,11 +13,11 @@ Transformer_ECS111/
 │   └── chopin/                   # Folder named after the composer, e.g., 'chopin'
 │       └── *.wav                 # All raw WAV files (48 kHz preferred)
 │
-├── token_data/                   # Will contain token files after tokenization
+├── encoded_tokens/                   # Will contain token files after tokenization
 │
 ├── token_jsonl/                  # Metadata files with paths/labels per token file
 │
-├── model_results_chopin/        # Folder where model checkpoints will be saved
+├── model_results_ComposerUserSpecified/        # Folder where model checkpoints will be saved
 │
 ├── generated_clips/             # Folder for storing generated audio files
 │
