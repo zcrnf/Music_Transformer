@@ -2,6 +2,10 @@
 
 This project builds a lightweight, end-to-end pipeline to generate stylistically faithful piano music in the style of Frédéric Chopin, using Encodec audio tokens and a GPT-style Transformer architecture. The model learns directly from audio data and produces output that reflects expressive nuances lost in MIDI-based models.
 
+While the current outputs are still evolving, they exhibit emerging tonal structure.
+
+However, due to the limited resources, the amount of data is not increased over 47 hours, but by using larger datasets, the results will likely be great.
+
 ---
 
 ## Project Folder Structure
