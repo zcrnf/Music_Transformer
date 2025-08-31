@@ -30,10 +30,8 @@ Transformer_ECS111/
 ├── 1_audio_preprocessing.py     # Preprocess WAV files (trims silence, pads)
 ├── 2_Tokenization.py            # Tokenizes preprocessed audio into Encodec tokens
 ├── 3_data_preparation.py        # Generates JSONL file linking token files and labels
-├── 4_Transformer.py             # Trains a multi-codebook GPT Transformer on the tokens
+├── 4_Transformer.py             # Trains a new multi-codebook GPT Transformer on the tokens, or start from a check point
 ├── 5_MusicPrediction.py         # Generates music from learned model using temperature sampling
-├── 100_resume_training.py       # Resumes training from checkpoint
-│
 ├── requirements.txt             # Dependencies list
 └── README.md
 ```
@@ -87,6 +85,7 @@ To use this pipeline, users should first place their raw audio files (e.g., .wav
 * What it does: Trains a decoder-only Transformer with 8 layers, 8 heads, and separate output heads for each of the 8 codebooks.
 * Output: Model checkpoints in `model_results_chopin/`
 * Result: Model learns stylistic cues (rubato, phrasing) from Chopin tokens.
+* Optional: Allows continuing training from a checkpoint.
 
 ### 5. Music Generation (`5_MusicPrediction.py`)
 
@@ -94,9 +93,8 @@ To use this pipeline, users should first place their raw audio files (e.g., .wav
 * Uses top-p (0.9), temp=1.0, repetition penalty γ=1.015, dynamic entropy boosting.
 * Output: WAV files stored in `generated_clips/`
 
-### 6. Resume Training (`100_resume_training.py`)
 
-* Optional: Allows continuing training from a checkpoint.
+
 
 ---
 
