@@ -4,7 +4,7 @@ A GPT-style transformer trained on MIDI music files using REMI tokenization with
 
 Sample result: see the midi file in the folder
 
-Update: For people who have visited this project before: this project switched the training data from real piano to midi, switched tokenization from Encodec to REMI, for a better performance
+Update 11/17/2025: For people who have visited this project before: this project switched the training data from real piano to midi, switched tokenization from Encodec to REMI, for a better performance
 
 Training Data Source: https://drive.google.com/drive/folders/1gskpFXA04GMyTT0f9r4z3C2ddzCEOP42
 
