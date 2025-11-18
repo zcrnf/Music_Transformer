@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Data files (too large for git)
+data_raw/
+encoded_tokens/
+*.mid
+*.th
+*.jsonl
+
+# Model checkpoints (too large for git)
+model_results_midis/
+*.pt
+*.pth
+
+# Generated outputs
+generated_music/
+
+# Logs
+*.log
+training.log
+
+# OS
+.DS_Store
+*.Zone.Identifier
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+wget-log
+composer_mapping.json
+metadata_clean_midis.jsonl
