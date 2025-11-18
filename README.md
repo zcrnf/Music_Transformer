@@ -1,7 +1,7 @@
 # Music Transformer - REMI Tokenization Training Pipeline
 
 A GPT-style transformer trained on MIDI music files using REMI tokenization with composer conditioning. Sample result: see the midi file in the folder
-
+Training Data Source: https://drive.google.com/drive/folders/1gskpFXA04GMyTT0f9r4z3C2ddzCEOP42
 ## Overview
 
 This project trains a music generation model on ~10,841 MIDI files from 237 composers using:
