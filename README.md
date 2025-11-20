@@ -8,6 +8,7 @@ Update 11/17/2025: For people who have visited this project before: this project
 
 Training Data Source: https://drive.google.com/drive/folders/1gskpFXA04GMyTT0f9r4z3C2ddzCEOP42
 
+Example result shown in the midi file in the directory, it can either be played directly or by converting to mp3 using online tools
 ## Overview
 
 This project trains a music generation model on ~10,841 MIDI files from 237 composers using:
