@@ -1,0 +1,59 @@
+# Accelerate Configuration File
+# Generated with `accelerate config` or created manually
+# Place in ~/.cache/huggingface/accelerate/default_config.yaml
+
+compute_environment: LOCAL_MACHINE
+
+# ============================================================================
+# Single Machine, Multiple GPUs
+# ============================================================================
+distributed_type: MULTI_GPU
+num_processes: 4  # Number of GPUs
+
+# Mixed precision training (faster, uses less memory)
+mixed_precision: fp16  # Options: no, fp16, bf16
+
+# Enable gradient accumulation (simulate larger batches)
+gradient_accumulation_steps: 2
+
+# Use CPU offloading (for very large models)
+use_cpu: false
+
+# ============================================================================
+# Multi-Node Configuration
+# ============================================================================
+# Uncomment and modify for multi-node training:
+
+# distributed_type: MULTI_GPU
+# num_processes: 8  # Total processes across all machines
+# num_machines: 2   # Number of machines
+# machine_rank: 0   # 0 for master, 1,2,3... for workers
+# main_process_ip: "192.168.1.100"  # Master node IP
+# main_process_port: 29500
+
+# ============================================================================
+# DeepSpeed Configuration
+# ============================================================================
+# Uncomment to use DeepSpeed:
+
+# distributed_type: DEEPSPEED
+# deepspeed_config_file: deepspeed_config.json
+# zero_stage: 2  # 1, 2, or 3
+# gradient_accumulation_steps: 4
+# gradient_clipping: 1.0
+# offload_optimizer_device: none  # or "cpu" for CPU offload
+# offload_param_device: none      # or "cpu" for CPU offload
+
+# ============================================================================
+# Additional Settings
+# ============================================================================
+dynamo_backend: "no"  # Torch compile backend
+downcast_bf16: "no"   # Downcast FP32 -> BF16
+machine_rank: 0
+main_training_function: main
+rdzv_backend: static
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false

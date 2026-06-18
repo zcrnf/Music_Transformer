@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Models and checkpoints
+*.pt
+*.pth
+saved_model/
+saved_model_*/
+checkpoint_*.pt
+
+# Data files (too large for git)
+*.mid
+*.midi
+Chopin_midi_files/
+Chopin_midi_files_split/
+Chopin_midi_tokens/
+
+# Zone Identifier files (Windows)
+*:Zone.Identifier
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Others
+others/
